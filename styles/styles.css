@@ -16,8 +16,8 @@ header {
     align-items: center;
 }
 
-.header-left,
-.header-right {
+.headerIzq,
+.headerDer{
     display: flex;
 }
 
@@ -25,45 +25,44 @@ header {
     width: 45px;
 }
 
-.account-button,
-.cart-button,
-.favorites-button {
-    color: #000000;
+.botonCuenta,
+.botonCarrito,
+.botonFavoritos {
+    color: black;
     padding: 8px;
-    font-size: 1em;
+    font-size: 12px;
     text-decoration: none;
     display: flex;
     align-items: center;
     margin-left: 10px;
     border-radius: 20px;
-    transition: background-color 0.3s ease;
 }
 
-.account-button{
+.botonCuenta {
     background-color: transparent;
 }
 
-.cart-button, 
-.favorites-button {
+.botonCarrito, 
+.botonFavoritos {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.account-button span,
-.cart-button span,
-.favorites-button span {
+.botonCuenta span,
+.botonCarrito span,
+.botonFavoritos span {
     margin-right: 10px;
 }
 
-.icon {
+.icono {
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
-.account-button:hover,
-.cart-button:hover,
-.favorites-button:hover,
-.logo-button:hover {
+.botonCuenta:hover,
+.botonCarrito:hover,
+.botonFavoritos:hover,
+.botonLogo:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -71,122 +70,111 @@ main {
     padding: 20px;
 }
 
-.customization {
+form {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: center;  
 }
 
-.shirt-image {
+.imagenCamiseta {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd;
+    border: 1px solid white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.product-details {
+.detallesProducto {
     max-width: 400px;
 }
 
-.product-details h1 {
-    font-size: 1.8em;
-    color: #333;
+.detallesProducto h1 {
+    font-size: 35px;
+    color: black;
     margin-bottom: 10px;
 }
 
-.price {
-    font-size: 1.5em;
-    color: #000000;
-    margin: 10px 0;
+.precio {
+    font-size: 30px;
 }
 
-.options {
+.opciones {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.options label {
-    font-size: 1em;
-    color: #333;
+.opciones label {
+    font-size: 16px;
+    color: black;
     font-weight: bold;
 }
 
-.options select {
+.opciones select {
     padding: 10px;
-    font-size: 1em;
+    font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid white;
 }
 
 hr {
-    border: 1px solid #ddd;
+    border: 1px solid white;
     margin: 20px 0;
 }
 
-.save-design {
-    display: inline-block;
+.guardarDiseño {
     padding: 15px 30px;
-    font-size: 1em;
-    color: #ffffff;
+    font-size: 16px;
+    color: white;
     background-color: #1c4b7e;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    transition: background-color 0.3s ease;
 }
 
-.save-design:hover {
+.guardarDiseño:hover {
     background-color: #193655;
 }
 
-.action-buttons {
+.botonesAdicionales {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.save-favorite,
-.add-to-cart {
+.guardarFavorito,
+.guardarCarrito {
     padding: 15px 30px;
-    font-size: 1em;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    transition: background-color 0.3s ease;
     text-align: center;
 }
 
-.save-favorite {
-    background-color: #ffffff;
-    color: #000000;
+.guardarFavorito {
+    background-color: white;
+    color: black;
 }
 
-.save-favorite:hover {
+.guardarFavorito:hover {
     background-color:  #d82121c2;
 }
 
-.add-to-cart {
-    background-color: #000000;
-    color: #ffffff;
+.guardarCarrito {
+    background-color: black;
+    color: white;
 }
 
-.add-to-cart:hover {
-    background-color: #333333;
-}
-
-.file-drop-area {
-    border: 2px dashed #ccc;
+.subirArchivo {
+    border: 2px dashed grey;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
@@ -194,36 +182,35 @@ hr {
     border-radius: 10px;
 }
 
-.file-drop-area p {
+.subirArchivo p {
     margin: 0;
-    font-size: 1em;
-    color: #333;
-    display: block;
+    font-size: 16px;
+    color: black;
 }
 
-.file-drop-area:hover {
-    background-color: #f9f9f9;
+.subirArchivo:hover {
+    background-color: lightgrey;
 }
 
-@media (max-width: 768px) {
-    .customization {
+@media (max-width: 760px) {
+    form {
         flex-direction: column;
         align-items: center;
     }
 
-    .product-details {
+    .detallesProducto {
         max-width: 100%;
     }
 
-    .header-left,
-    .header-right {
+    .headerIzq,
+    .headerDer {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .account-button,
-    .cart-button,
-    .favorites-button {
+    .botonCuenta,
+    .botonCarrito,
+    .botonFavoritos {
         margin-left: 0;
         margin-top: 10px;
     }

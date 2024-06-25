@@ -1,52 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalización camisetas - ThreadOne</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
-        <div class="header-left">
-            <a href="home.html" class="logo-button">
-                <img src="../utilis/LogoThreadOne.png" alt="Logo" class="logo">
+        <div class="headerIzq">
+            <a href="home.html" class="botonLogo">
+                <img src="../utilis/LogoThreadOne.png" class="logo">
             </a>
         </div>
-        <div class="header-right">
-            <a href="favoritos.html" class="favorites-button">
+        <div class="headerDer">
+            <a href="favoritos.html" class="botonFavoritos">
                 <span>Favoritos</span>
-                <img src="../utilis/IconoFavoritos.png" alt="Icono Favoritos" class="icon">
+                <img src="../utilis/IconoFavoritos.png" class="icono">
             </a>
-            <a href="carrito.html" class="cart-button">
+            <a href="carrito.html" class="botonCarrito">
                 <span>Carrito</span>
-                <img src="../utilis/IconoCarrito.png" alt="Icono Carrito" class="icon">
+                <img src="../utilis/IconoCarrito.png" class="icono">
             </a>
-            <a href="cuenta.html" class="account-button">
+            <a href="cuenta.html" class="botonCuenta">
                 <span>Hey, Marcus</span>
-                <img src="../utilis/ImagenPerfil.jpg" alt="Icono Cuenta" class="icon">
+                <img src="../utilis/ImagenPerfil.jpg" class="icono">
             </a>
         </div>
     </header>
     <main>
-        <section class="customization">
-            <div class="product-view">
-                <div class="product-image">
-                    <img src="../utilis/Camiseta.png" alt="Camiseta" class="shirt-image">
+        <form action="BDThreadOne.extension" method="post">
+            <div class="producto">
+                <div class="imagenProducto">
+                    <img src="../utilis/Camiseta.png" class="imagenCamiseta">
                 </div>
-                <div class="file-drop-area">
-                    <p>Arrastra tu foto favorita aquí</p>
-                    <input type="file" id="file-input" accept="image/*" onchange="handleFileSelect(event)">
+                <div class="subirArchivo">
+                    <p>Arrastra tu foto aquí</p>
+                    <input type="file" id="fileInput" accept="image/*" onchange="handleFileSelect(event)">
                 </div>
             </div>
-            <div class="product-details">
+            <div class="detallesProducto">
                 <h1>Nombre del producto</h1>
                 <p>Camiseta personalizada</p>
-                <p class="price">$MX335.00</p>
+                <p class="precio">$MX335.00</p>
                 <hr>
-                <div class="options">
-                    <label for="size"><strong>Seleccionar talla</strong></label>
-                    <select id="size">
+                <div class="opciones">
+                    <label for="talla"><strong>Seleccionar talla</strong></label>
+                    <select id="talla">
                         <option value="S">S</option>
                         <option value="M">M</option>
                         <option value="L">L</option>
@@ -55,19 +53,19 @@
                     </select>
                     <label for="color"><strong>Seleccionar color</strong></label>
                     <select id="color">
-                        <option value="blanco">Blanco</option>
-                        <option value="negro">Negro</option>
-                        <option value="rojo">Gris</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Rojo">Gris</option>
                     </select>
                 </div>
-                <button class="save-design">Guardar diseño</button>
+                <button type="submit" class="guardarDiseño">Guardar diseño</button>
                 <hr>
-                <div class="action-buttons">
-                    <button class="add-to-cart">Añadir al carrito</button>
-                    <button class="save-favorite">Añadir a favoritos</button>
+                <div class="botonesAdicionales">
+                    <button type="submit" class="guardarCarrito">Añadir al carrito</button>
+                    <button type="submit" class="guardarFavorito">Añadir a favoritos</button>
                 </div>
             </div>
-        </section>
+        </form>
     </main>
 </body>
 </html>
