@@ -1,2 +1,2 @@
 # Formulario_personalizacion_camiseta
-Repositorio para la personalizacion de camisetas en la tienda online ThreadOne
+Repositorio de un formulario para la sección de personalización de camisetas en la tienda online ThreadOne (proyecto integrador). En este formulario se puede elegir la talla y color de camiseta, además de integrar la opción de subir un archivo de un diseño para estampar. Cabe aclarar que aunque se tienen los botones para guardar el diseño, añadirlo al carrito o a favoritos, estos datos aún no son almacenados.
